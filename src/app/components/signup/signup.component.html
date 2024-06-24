@@ -1,33 +1,63 @@
 
-<form action="">
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()" action="">
     <div>
         <h3>Sign Up</h3>
     </div>
     <div>
-        <input type="text" placeholder="Enter the Name">
+        <input type="text" formControlName="username" placeholder="Enter the Name">
+        <div class="error">
+            <div *ngIf="(profileForm.controls.username.touched)&&(profileForm.controls.username.hasError('required'))">
+              User Name is required.
+            </div>
+        </div>
     </div>
     <div>
-        <input type="text" placeholder="Enter the email Id">
+        <input type="text" formControlName="emailId" placeholder="Enter the email Id">
+        <div class="error">
+            <div *ngIf="(profileForm.controls.emailId.touched)&&(profileForm.controls.emailId.hasError('required'))">
+              Email Id is required.
+            </div>
+        </div>
     </div>
     <div>
-        <span>Genter:</span> 
+        <span>Gender:</span> 
         <br>
-        <input type="radio" name="gender"> Male
-        <input type="radio" name="gender"> Female
-        <input type="radio" name="gender"> Other
+        <input type="radio" formControlName="gender" name="gender" value="male" checked> Male
+        <input type="radio" formControlName="gender" name="gender" value="female"> Female
+        <input type="radio" formControlName="gender" name="gender"value=other> Other
+        <div class="error">
+            <div *ngIf="(profileForm.controls.gender.touched)&&(profileForm.controls.gender.hasError('required'))">
+              Gender is required.
+            </div>
+        </div>
     </div>
     <div>
         <span>Date of Birth:</span>
         <br>
-        <input type="date">
+        <input type="date" formControlName="dob">
+        <div class="error">
+            <div *ngIf="(profileForm.controls.dob.touched)&&(profileForm.controls.dob.hasError('required'))">
+              Date of Birth is required.
+            </div>
+        </div>
     </div>
     <div>
-        <input type="password" placeholder="Enter the password">
+        <input type="password" formControlName="password" placeholder="Enter the password">
+        <div class="error">
+            <div *ngIf="(profileForm.controls.password.touched)&&(profileForm.controls.password.hasError('required'))">
+              Password is required.
+            </div>
+        </div>
     </div>
     <div>
-        <input type="password" placeholder="Confirm password">
+        <input type="password" formControlName="cpassword" placeholder="Confirm password">
+        <div class="error">
+            <div *ngIf="(profileForm.controls.cpassword.touched)&&(profileForm.controls.cpassword.hasError('required'))">
+              Confirm Password is required.
+            </div>
+        </div>
     </div>
     <div>
-        <input type="button" value="sign Up">
+        <input type="submit" value="sign Up">
     </div>
 </form>

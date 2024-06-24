@@ -1,16 +1,26 @@
 
-<form action="">
+<form action="" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
     <div>
         <h3>Sign In</h3>
     </div>
     <div>
-        <input type="text" placeholder="Enter the email Id">
+        <input type="text" formControlName="email" placeholder="Enter the email Id">
+        <div class="error">
+            <div *ngIf="(profileForm.controls.email.touched)&&(profileForm.controls.email.hasError('required'))">
+              Email is required.
+            </div>
+        </div>
     </div>
     <div>
-        <input type="password" placeholder="Enter the password">
+        <input type="password" formControlName="password" placeholder="Enter the password">
+        <div class="error">
+            <div *ngIf="(profileForm.controls.password.touched)&&(profileForm.controls.password.hasError('required'))">
+              Password is required.
+            </div>
+          </div>
     </div>
     <div>
-        <input type="button" value="sign In">
+        <input type="submit" value="sign In">
     </div>
     <div>
         <a href="">Forgot password</a>

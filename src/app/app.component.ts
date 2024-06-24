@@ -5,7 +5,6 @@ import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { Districts } from './model/districts.interface';
 import { DistrictsdetailsComponent } from './pages/districtsdetails/districtsdetails.component';
-import { AuthComponent } from './pages/auth/auth.component';
 
 @Component({
   selector: 'app-root',

@@ -16,10 +16,15 @@ span{
     font-weight: bold;
 }
 
-input[type=button]{
+input[type=submit]{
     background-color: rgb(75, 75, 74);
 }
 
-input[type=button]:hover{
+input[type=submit]:hover{
     background-color: rgb(50, 50, 49);
+}
+
+.error{
+    color: red;
+    font-size: 12px;
 }
