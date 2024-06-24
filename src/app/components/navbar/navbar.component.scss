@@ -22,6 +22,19 @@
     font-size: 10px;
 }
 
+.nav-div-align-center{
+    margin-left: 10%;
+    input{
+        width: 300px;
+        border-radius: 10px;
+        padding-left: 10px;
+    }
+    input::placeholder{
+        color: rgb(108, 126, 135);
+        font-style: italic;
+    }
+}
+
 .nav-div-align-right{
     position: absolute;
     right: 0px;

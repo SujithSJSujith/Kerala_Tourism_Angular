@@ -25,4 +25,8 @@ export class NavbarComponent {
     localStorage.setItem('showAuthForm', JSON.stringify(1));
   }
 
+  setLSDistrictId(){
+    localStorage.setItem('districtId', JSON.stringify(10));
+  }
+
 }

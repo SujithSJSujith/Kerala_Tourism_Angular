@@ -1,5 +1,5 @@
 .district-list{
-    background-color: rgb(196, 193, 193);
+    background-color: rgb(240, 237, 237);
     position: absolute;
     top: 0px;
     bottom: 0px;
@@ -7,12 +7,12 @@
     overflow-y: scroll;
     scrollbar-width: none;
     .nav-districts{
-        background-color: rgb(199, 204, 202);
+        background-color: rgb(209, 212, 211);
         margin: 5px;
         padding: auto;
         padding-top: 1px;
         padding-bottom: 1px;
-        font-size: 14px;
+        font-size: 20px;
     }
     .nav-districts:hover{
         cursor: pointer;
@@ -20,7 +20,7 @@
 }
 
 .district-details{
-    background-color: rgb(178, 182, 180);
+    background-color: rgb(229, 232, 231);
     position: absolute;
     left: 30%;
     width: 70%;
@@ -35,10 +35,23 @@
         scrollbar-width: thin;
     }
     .card{
-        background-color: rgb(194, 196, 195);
+        background-color: rgb(227, 228, 228);
     }
     h2{
-        // position: fixed;
+        position: relative;
+        text-align: center;
+        font-weight: bolder;
+        font-size: 20px;
+        background: rgb(255,255,255,0.6);
+        background-position-x: 500px;
         font-family:'Times New Roman', Times, serif;
+    }
+    .scroll-none{
+        scrollbar-width: none;
+    }
+    .img1{
+        width: 700px;
+        height: 400px;
+        padding: 5px;
     }
 }

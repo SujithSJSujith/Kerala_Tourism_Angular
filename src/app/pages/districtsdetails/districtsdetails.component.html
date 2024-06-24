@@ -10,11 +10,14 @@
 
     <div class="district-details">
         <h2>{{district_title}}</h2>
-        <img [src]="district_image" alt="">
+        <div class="district-details-div scroll-none d-flex">
+            <img class="img1" [src]="district_image" alt="">
+            <img class="img1" src="images/img1/thekkekudi_cave_temple.jpg" alt="">
+        </div>
         <p>{{district_description}}</p>
         <div class="district-details-div d-flex">
             @for(item_place of tourist_places; track item_place.name ){
-                <div href="item_place.name" class="card col-6 p-1 m-1">
+                <div [id]="item_place.name" class="card col-6 p-1 m-1">
                     <img src="images/img1/thekkekudi_cave_temple.jpg" alt="">
                     <h4>{{item_place.name}}</h4>
                     <p>{{item_place.description}}</p>
