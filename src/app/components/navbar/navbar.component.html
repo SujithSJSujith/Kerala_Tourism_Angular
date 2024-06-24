@@ -1,0 +1,39 @@
+
+<nav class="nav container-fluid p-3">
+    <div class="d-flex">
+        <div>
+            <img class="kerala-tourism-img" src="images/kerala-tourism-title.png" alt="">
+        </div>
+        <div>
+            <div>
+                <span class="kerala-tourism-title">Kerala Tourism</span>
+            </div>
+            <div>
+                <span class="kerala-tourism-description">Welcom to God's Own Country</span>
+            </div>
+        </div>
+    </div>
+    <div class="nav-div-align-right d-flex">
+        <div>
+            <span class="login" (click)="authenticationForm()">Login</span>
+        </div>
+        <div>
+            <span routerLink="/home">Home</span>
+        </div>
+        <div>
+            <span routerLink="/services">Services</span>
+        </div>
+        <div>
+            <span routerLink="/contacts">Contacts</span>
+        </div>
+        <div class="pe-3">
+            <span routerLink="/about">About</span>
+        </div>
+    </div>
+    <div id="authentication-form" class="div-login" [style]="getStyle()">
+        <div class="">
+            <app-auth></app-auth>  
+        </div>
+    </div>
+</nav>
+

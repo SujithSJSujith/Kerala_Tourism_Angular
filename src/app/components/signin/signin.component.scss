@@ -1,0 +1,25 @@
+input{
+    background-color: rgb(220, 216, 216);
+    font-weight: bold;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+    width: 200px;
+}
+
+h3{
+    color: rgb(144, 144, 207);
+}
+
+span{
+    font-weight: bold;
+}
+
+input[type=button]{
+    background-color: rgb(75, 75, 74);
+}
+
+input[type=button]:hover{
+    background-color: rgb(50, 50, 49);
+}

@@ -1,0 +1,33 @@
+.auth{
+    z-index: 100;
+    position:fixed;
+    top: 0px;
+    bottom: 00px;
+    left: 0px;
+    right: 0px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+    .sign{
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+        bottom: 0px;
+
+        button{
+            background-color: rgb(92, 91, 91);
+            border-radius: 10px;
+        }
+        button:hover{
+            background-color: rgb(135, 133, 133);        }
+
+    }
+}

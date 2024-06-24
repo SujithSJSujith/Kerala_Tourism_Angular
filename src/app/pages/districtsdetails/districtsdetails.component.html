@@ -1,0 +1,28 @@
+<div class="container-fluid d-flex">
+
+    <div class="district-list">
+        @for(item of districtList; track item.id){
+            <div class="nav-districts p-3" (click)="more_details(item.id)">
+                <span>{{item.title}}</span>
+            </div>
+        }
+    </div>
+
+    <div class="district-details">
+        <h2>{{district_title}}</h2>
+        <img [src]="district_image" alt="">
+        <p>{{district_description}}</p>
+        <pre>
+
+
+
+
+
+            wdfvfe
+
+            r2f
+        </pre>
+    </div>
+    
+</div>
+

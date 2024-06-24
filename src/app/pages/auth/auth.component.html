@@ -1,0 +1,14 @@
+<div class="auth">
+    <div class="sign">
+        <div>
+            <button class="float-start" (click)="sign()">{{button_name}}</button>
+            <button class="float-end" (click)="closeAuth()">Close</button>
+        </div>
+        <div class="sign-in" [style]="getStyleSI()">
+           <app-signin></app-signin>
+        </div>
+        <div class="sign-up" [style]="getStyleSU()">
+            <app-signup></app-signup>
+        </div>
+    </div>
+</div>

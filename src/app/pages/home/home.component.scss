@@ -1,0 +1,52 @@
+.experience-kerala{
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    img{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        padding: 3px;
+        opacity: 0.8;
+    }
+    img:hover{
+        position: relative;
+        height: 101%;
+        width: 101%;
+        padding: 3px;
+        opacity: 1.0;
+    }
+}
+
+.top-destinations{
+    img{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        padding: 3px;
+        opacity: 0.8;
+    }
+    img:hover{
+        position: relative;
+        height: 101%;
+        width: 101%;
+        padding: 3px;
+        opacity: 1.0;
+    }
+}
+
+.visit-districts{
+        overflow-x: scroll;
+        scrollbar-width: thin;
+        img:hover{
+            cursor: pointer;
+            opacity: 0.8;
+        }
+}
+
+.container-heading{
+    position: relative;
+    justify-items: center;
+    color: rgb(13, 8, 87);
+    padding: 50px;
+    text-align: center;
+}
