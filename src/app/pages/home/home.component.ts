@@ -563,27 +563,109 @@ export class HomeComponent {
     }
   ];
 
-  images0 : any = [
-    { id : 1, src : "images/img0/Theyyam.jpg"},
-    { id : 2, src : "images/img0/Kerala_Cuisine.jpg"},
-    { id : 3, src : "images/img0/rt.jpg"},
-    { id : 4, src : "images/img0/ecotourism.jpg"},
-    { id : 5, src : "images/img0/Theyyam.jpg"},
-    { id : 6, src : "images/img0/Kerala_Cuisine.jpg"},
-    { id : 7, src : "images/img0/rt.jpg"},
-    { id : 8, src : "images/img0/ecotourism.jpg"},
-  ]
+  images0: any[] = [
+    { 
+      id: 1, 
+      src: "images/img0/Theyyam.jpg", 
+      title: "Theyyam", 
+      description: "Theyyam is a traditional ritualistic dance form of Kerala, India. It incorporates elements of dance, music, and drama." 
+    },
+    { 
+      id: 2, 
+      src: "images/img0/Kerala_Cuisine.jpg", 
+      title: "Kerala Cuisine", 
+      description: "Kerala cuisine is known for its spicy and flavorful dishes, often prepared with coconut and a variety of spices." 
+    },
+    { 
+      id: 3, 
+      src: "images/img0/rt.jpg", 
+      title: "Rural Tourism", 
+      description: "Rural tourism in Kerala offers an opportunity to experience the cultural richness and natural beauty of the countryside." 
+    },
+    { 
+      id: 4, 
+      src: "images/img0/ecotourism.jpg", 
+      title: "Ecotourism", 
+      description: "Ecotourism in Kerala promotes sustainable travel practices and allows visitors to explore the state's diverse ecosystems." 
+    },
+    { 
+      id: 5, 
+      src: "images/img0/Theyyam.jpg", 
+      title: "Theyyam", 
+      description: "Theyyam is a traditional ritualistic dance form of Kerala, India. It incorporates elements of dance, music, and drama." 
+    },
+    { 
+      id: 6, 
+      src: "images/img0/Kerala_Cuisine.jpg", 
+      title: "Kerala Cuisine", 
+      description: "Kerala cuisine is known for its spicy and flavorful dishes, often prepared with coconut and a variety of spices." 
+    },
+    { 
+      id: 7, 
+      src: "images/img0/rt.jpg", 
+      title: "Rural Tourism", 
+      description: "Rural tourism in Kerala offers an opportunity to experience the cultural richness and natural beauty of the countryside." 
+    },
+    { 
+      id: 8, 
+      src: "images/img0/ecotourism.jpg", 
+      title: "Ecotourism", 
+      description: "Ecotourism in Kerala promotes sustainable travel practices and allows visitors to explore the state's diverse ecosystems." 
+    },
+  ];
+  
 
-  images1 : any = [
-    {id : 1, src : "images/img1/kalamandalam2.jpg"},
-    {id : 2, src : "images/img1/kunhimangalam2.jpg"},
-    {id : 3, src : "images/img1/Kuthampully.jpg"},
-    {id : 4, src : "images/img1/MANNANAM-.jpg"},
-    {id : 5, src : "images/img1/mannar.jpg"},
-    {id : 6, src : "images/img1/museum_of_kerala_history1.jpg"},
-    {id : 7, src : "images/img1/vyloppilli-samakrithi-bhavan2.jpg"},
-    {id : 8, src : "images/img1/MANNANAM-.jpg"},
-  ]
+  images1: any[] = [
+    { 
+      id: 1, 
+      src: "images/img1/kalamandalam2.jpg", 
+      title: "Kalamandalam", 
+      description: "Kalamandalam is a renowned institution in Kerala dedicated to the preservation and promotion of traditional Indian art forms, particularly Kathakali and Mohiniyattam." 
+    },
+    { 
+      id: 2, 
+      src: "images/img1/kunhimangalam2.jpg", 
+      title: "Kunhimangalam", 
+      description: "Kunhimangalam is a scenic village in Kerala known for its serene environment and traditional agricultural practices." 
+    },
+    { 
+      id: 3, 
+      src: "images/img1/Kuthampully.jpg", 
+      title: "Kuthampully", 
+      description: "Kuthampully is famous for its traditional handloom industry producing Kerala's distinctive Kasavu sarees, known for their elegant golden borders." 
+    },
+    { 
+      id: 4, 
+      src: "images/img1/MANNANAM-.jpg", 
+      title: "Mannanam", 
+      description: "Mannanam is a historical town in Kerala known for its educational institutions and cultural heritage." 
+    },
+    { 
+      id: 5, 
+      src: "images/img1/mannar.jpg", 
+      title: "Mannar", 
+      description: "Mannar is a picturesque village in Kerala surrounded by lush greenery and backwaters, offering a tranquil environment." 
+    },
+    { 
+      id: 6, 
+      src: "images/img1/museum_of_kerala_history1.jpg", 
+      title: "Museum of Kerala History", 
+      description: "The Museum of Kerala History in Kochi showcases the cultural evolution of Kerala through various artifacts and exhibits." 
+    },
+    { 
+      id: 7, 
+      src: "images/img1/vyloppilli-samakrithi-bhavan2.jpg", 
+      title: "Vyloppilli Samskriti Bhavan", 
+      description: "Vyloppilli Samskriti Bhavan is a cultural center in Kerala dedicated to the promotion of literature, arts, and cultural activities." 
+    },
+    { 
+      id: 8, 
+      src: "images/img1/MANNANAM-.jpg", 
+      title: "Mannanam", 
+      description: "Mannanam is a historical town in Kerala known for its educational institutions and cultural heritage." 
+    },
+  ];
+  
 
   ngOnInit(){
     console.log("This is Home")

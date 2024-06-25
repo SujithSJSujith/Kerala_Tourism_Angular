@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, DatePipe } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
@@ -6,10 +6,13 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
   selector: 'app-signup',
   standalone: true,
   imports: [ReactiveFormsModule,CommonModule],
+  providers: [DatePipe],
   templateUrl: './signup.component.html',
   styleUrl: './signup.component.scss'
 })
 export class SignupComponent {
+
+  constructor(private datePipe: DatePipe){}
 
   profileForm = new FormGroup({
     username: new FormControl('', [Validators.required]),
@@ -22,6 +25,7 @@ export class SignupComponent {
 
   onSubmit() {
     if (this.profileForm.valid) {
+      this.profileForm.value.dob = this.datePipe.transform(this.profileForm.value.dob);
       console.log(this.profileForm.value);
     }
   }
